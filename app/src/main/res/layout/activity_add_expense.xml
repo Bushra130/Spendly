@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount (₹)"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="0.00"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title / Merchant"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Groceries, Electricity bill"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="31 Oct 2026"
+        android:layout_marginBottom="24dp"/>
+    <Button
+        android:id="@+id/btnScanBill"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Scan Bill with OCR (Optional)"
+        android:backgroundTint="#6c757d"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnSaveExpense"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#0F5132"
+        android:text="Save expense"
+        android:textSize="16sp" />
+
+</LinearLayout>
